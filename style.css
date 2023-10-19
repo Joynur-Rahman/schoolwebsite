@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(eduford_img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 80px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 6px;
+    position: relative;
+}
+
+/* Style for the navigation links */
+.nav-links ul li a {
+    color: #ffffff; /* Set the font color to white */
+    text-decoration: none; /* Remove underlines from links */
+    font-size: 16px; /* Set the font size */
+}
+
+/* Hover effect for the navigation links */
+.nav-links ul li a:hover {
+    color: #ff9900; /* Change font color on hover (e.g., orange) */
+}
+/* Style for the navigation links */
+.nav-links ul li a {
+    color: #ffffff; /* Set the default font color to white */
+    text-decoration: none; /* Remove underlines from links */
+    font-size: 16px; /* Set the font size */
+    transition: color 0.3s ease; /* Add a color transition */
+}
+
+/* Hover effect for the navigation links */
+.nav-links ul li a:hover {
+    color: #2f99ce; /* Change font color on hover to orange */
+}
+.text-box {
+    width: 90%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color:white;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration:none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 13px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #ff9900;
+    background: #ff9900;
+    transition: 1s;
+}
+nav .fa-solid{
+    display:none;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    nav .fa-solid{
+        display:block;
+    }
+    .nav-links ul{
+        position:fixed;
+        padding-top: 60px;
+        background-color:brown;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+       /* text-align: left;*/
+       border-bottom-left-radius: 30px;
+        z-index: 2;
+        transition: right 1s;
+    }
+    nav.fa {
+        display:block;
+        color: #fff;
+        margin: 30px;
+        font-size: 50px;
+        cursor: pointer;
+    }
+    .nav-links ul.fa  {
+        padding top: 60px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    .nav-links ul.fa {
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        cursor: pointer;
+    }
+}
+
+/*course*/
+.courses{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 20px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: bisque;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: .4s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0 rgba(4,9,30,0.7);
+}
+@media(max-width:700px) {
+    .row{
+        flex-direction: column;
+    }
+}
